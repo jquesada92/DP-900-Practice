@@ -1,0 +1,34 @@
+{
+	"name": "config_ecdc_files",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_datalake_covid_config",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "ecdc_files_list.json",
+				"folderPath": "config",
+				"fileSystem": "covid"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"sourceBaseURL": {
+					"type": "string"
+				},
+				"sourceRelativeURL": {
+					"type": "string"
+				},
+				"sinkFileName": {
+					"type": "string"
+				}
+			}
+		}
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

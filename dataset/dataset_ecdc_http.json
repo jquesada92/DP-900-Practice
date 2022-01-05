@@ -1,0 +1,40 @@
+{
+	"name": "dataset_ecdc_http",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ls_ecdc_httpp",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"sourceBaseURL": {
+					"value": "@dataset().sourceURL",
+					"type": "Expression"
+				}
+			}
+		},
+		"parameters": {
+			"sourceURL": {
+				"type": "string"
+			},
+			"relativeURL": {
+				"type": "string"
+			}
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "HttpServerLocation",
+				"relativeUrl": {
+					"value": "@dataset().relativeURL",
+					"type": "Expression"
+				}
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}

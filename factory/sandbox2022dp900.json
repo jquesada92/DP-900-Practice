@@ -1,0 +1,9 @@
+{
+	"name": "sandbox2022dp900",
+	"location": "westus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "ea92f15a-b3fe-46f7-a049-ab4c5efb6039",
+		"tenantId": "07bcea6c-4b0c-4ce8-bc7e-70a46004d41e"
+	}
+}
