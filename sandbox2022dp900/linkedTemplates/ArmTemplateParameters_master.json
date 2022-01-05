@@ -1,0 +1,30 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "sandbox2022dp900"
+		},
+		"ls_adls_covid_accountKey": {
+			"value": ""
+		},
+		"ls_datalake_covid_config_accountKey": {
+			"value": ""
+		},
+		"ls_adls_covid_properties_typeProperties_url": {
+			"value": "https://dp900stgaccount.dfs.core.windows.net"
+		},
+		"ls_datalake_covid_config_properties_typeProperties_url": {
+			"value": "https://dp900stgaccount.dfs.core.windows.net"
+		},
+		"ls_ecdc_httpp_properties_typeProperties_url": {
+			"value": "@{linkedService().sourceBaseURL}"
+		},
+		"containerUri": {
+			"value": ""
+		},
+		"containerSasToken": {
+			"value": ""
+		}
+	}
+}
