@@ -118,7 +118,7 @@
 									"type": "DatasetReference",
 									"parameters": {
 										"sinkFileName": "@item().sinkFileName",
-										"root": "covid",
+										"root": "@item().root",
 										"subfolder": "raw"
 									}
 								}
