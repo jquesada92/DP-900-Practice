@@ -1,0 +1,20 @@
+{
+	"name": "PopulationByCountry",
+	"properties": {
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"linkedService": {
+						"referenceName": "ls_adls_covid",
+						"type": "LinkedServiceReference"
+					},
+					"name": "srcPopulation"
+				}
+			],
+			"sinks": [],
+			"transformations": [],
+			"script": "source(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false,\n\tformat: 'excel',\n\tfileSystem: 'general',\n\tfolderPath: 'raw',\n\tfileName: 'Population.xlsx',\n\tsheetName: 'ESTIMATES',\n\trange: 'A17:BZ999',\n\tfirstRowAsHeader: true) ~> srcPopulation"
+		}
+	}
+}
