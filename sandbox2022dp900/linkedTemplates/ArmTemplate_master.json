@@ -7,6 +7,10 @@
 			"metadata": "Data Factory name",
 			"defaultValue": "sandbox2022dp900"
 		},
+		"GIT_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'GIT'"
+		},
 		"ls_adls_covid_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'ls_adls_covid'"
@@ -14,6 +18,14 @@
 		"ls_datalake_covid_config_accountKey": {
 			"type": "secureString",
 			"metadata": "Secure string for 'accountKey' of 'ls_datalake_covid_config'"
+		},
+		"GIT_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://api.github.com"
+		},
+		"GIT_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "jquesada92"
 		},
 		"ls_adls_covid_properties_typeProperties_url": {
 			"type": "string",
@@ -54,11 +66,20 @@
 					"factoryName": {
 						"value": "[parameters('factoryName')]"
 					},
+					"GIT_password": {
+						"value": "[parameters('GIT_password')]"
+					},
 					"ls_adls_covid_accountKey": {
 						"value": "[parameters('ls_adls_covid_accountKey')]"
 					},
 					"ls_datalake_covid_config_accountKey": {
 						"value": "[parameters('ls_datalake_covid_config_accountKey')]"
+					},
+					"GIT_properties_typeProperties_url": {
+						"value": "[parameters('GIT_properties_typeProperties_url')]"
+					},
+					"GIT_properties_typeProperties_userName": {
+						"value": "[parameters('GIT_properties_typeProperties_userName')]"
 					},
 					"ls_adls_covid_properties_typeProperties_url": {
 						"value": "[parameters('ls_adls_covid_properties_typeProperties_url')]"

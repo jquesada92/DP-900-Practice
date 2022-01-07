@@ -5,11 +5,20 @@
 		"factoryName": {
 			"value": "sandbox2022dp900"
 		},
+		"GIT_password": {
+			"value": ""
+		},
 		"ls_adls_covid_accountKey": {
 			"value": ""
 		},
 		"ls_datalake_covid_config_accountKey": {
 			"value": ""
+		},
+		"GIT_properties_typeProperties_url": {
+			"value": "https://api.github.com"
+		},
+		"GIT_properties_typeProperties_userName": {
+			"value": "jquesada92"
 		},
 		"ls_adls_covid_properties_typeProperties_url": {
 			"value": "https://dp900stgaccount.dfs.core.windows.net"
